@@ -1,0 +1,194 @@
+/* 全体のスタイル */
+body, html {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ヘッダースタイル */
+header {
+    background-color: #0c344e;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a8d0e6;
+}
+
+/* メインコンテンツスタイル */
+main {
+    padding: 2rem 0;
+}
+
+h1, h2, h3 {
+    color: #0c344e;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ユーザー情報セクション */
+.user-info p {
+    margin: 0.5rem 0;
+}
+
+/* 学習進捗セクション */
+.learning-progress .progress-bar {
+    margin-bottom: 1rem;
+}
+
+/* コースリストスタイル */
+.ongoing-courses ul,
+.completed-courses ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ongoing-courses li,
+.completed-courses li {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ongoing-courses h3,
+.completed-courses h3 {
+    margin-top: 0;
+    color: #0c344e;
+}
+
+/* プログレスバースタイル */
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* ボタンスタイル */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0c344e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #0a2a3f;
+}
+
+/* フッタースタイル */
+footer {
+    background-color: #0c344e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+    }
+}
